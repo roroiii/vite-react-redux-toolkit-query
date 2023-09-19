@@ -3,7 +3,6 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 
-import { useDispatch } from 'react-redux';
 import { useLoginMutation } from './api/auth';
 
 function App() {
@@ -11,7 +10,6 @@ function App() {
 
   const [user, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const dispatch = useDispatch();
 
   const [login] = useLoginMutation();
 
